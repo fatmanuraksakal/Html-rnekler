@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim Formu</title>
+</head>
+<body>
+    <h1>Bizimle İletişime Geçin</h1>
+    <form>
+        <h2>İletişim Bilgileri</h2> <hr>
+        <p>
+            <label for="adsoyad"><strong>Ad Soyad:</strong> </label>
+            <input type="text" id="adsoyad" name="adsoyad" required>
+        </p>
+        <p>
+            <label for="email"><strong>E-Mail:</strong></label>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+          <label for="yaş"><strong>Yaş:</strong></label>
+           <input type="number" id="yas" name="yas" required>  
+        </p>
+        
+        <p>
+            <label for="konu"><strong>Konu:</strong></label>
+            <select id="konu" name="konu">
+                <option value="bilgilendirme">Bilgilendirme</option>
+                <option value="iletisim">İletişim</option>
+                <option value="sorungiderme">Sorun Giderme</option>
+                <option value="yardım">Yardım</option>
+                <option value="destek">Destek</option>
+            </select>
+        </p>
+        <p>
+            <label for="mesaj"><strong>Mesajınız:</strong></label><br>
+            <textarea id="mesaj" name="mesaj" placeholder="Mesajınızı buraya yazın..." rows="5"></textarea>
+        </p>
+        <p>
+            <label for="haberbulten">Haber Bülteni Aboneliği:</label>
+            <input type="checkbox" id="haberbulten" name="haberbulten"/>
+        </p>
+        <p>
+            <input type="submit" value="Gönder">
+            <input type="reset" value="Temizle">
+         </p>
+
+    </form>
+    
+</body>
+</html>
